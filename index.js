@@ -42,3 +42,25 @@ rollBtn.addEventListener('click', function(){
     }
     active = !active;
 })
+
+
+resetBtn.addEventListener('click', function(){
+    reset();
+})
+
+function reset(){
+        message.textContent = "Player 1 turn";
+        player1ScoreBoard.textContent = "0";
+        player2ScoreBoard.textContent = "0";
+        player1Dice.textContent = "-";
+        player2Dice.textContent = "-";
+        player1Score = 0;
+        player2Score = 0;
+        player2Dice.classList.remove("active");
+        player1Dice.classList.add("active");
+        resetBtn.style.display= "none";
+        rollBtn.style.display= "block";
+
+
+
+}
